@@ -1,0 +1,27 @@
+// @ts-check
+//const { test, expect, chromium } = require('@playwright/test');
+
+
+
+
+
+
+
+
+// //Empty script
+//  test.only("login",async({page})=>{
+//   await page.goto("");
+//   await page.locator("").click();
+//   await page.locator("").click();
+//   await page.locator("").click();
+//   await page.locator("").click();
+//   await page.locator("").fill("");
+//   await page.locator("").click();
+//   await page.locator("").fill("123");
+//   await page.locator("").click();
+//   await page.waitForResponse
+  
+//  }) 
+ 
+     
+     
