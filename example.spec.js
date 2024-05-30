@@ -1,5 +1,5 @@
 // // @ts-check
-//  const { test, expect} = require('@playwright/test');
+  const { test, expect,webkit, firefox} = require('@playwright/test');
 
 
 //  test("samsung driver",async({page})=>{
@@ -145,8 +145,37 @@
   
 // //})
  
+var {windows}= require('../../Pages/commonmethods')
 
+test('example',async()=>{
+  
 
+   
+    const browser = await firefox.launch()
+    const context = await browser.newContext()
+    const page = await context.newPage()
+
+    
+
+    await page.viewportSize({width:1920,height:1080})
+    await page.goto('https://otest.anytimeastro.com/puja/')
+    const list = await page.locator("//a[@class='p-3 pb-0']").all()
+    // const listtext =list.toLocaleString()
+    
+    // console.log("listtext = "+listtext)
+
+    const list1=list[0]
+    console.log("list1="+list1)
+    const list2=list[1]
+    console.log("list2="+list2)
+    const list3=list[2]
+    console.log("list3="+list3)
+    const list4=list[3]
+    console.log("list4="+list4)
+    const list5=list[4]
+    console.log("list5="+list5)
+    //console.log(list)
+})
 
 
 
